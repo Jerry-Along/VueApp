@@ -1,9 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-
-const homePage =h => require.ensure([],  h(require('../pages/home/home')), 'homePage')
-const listPage =h => require.ensure([],  h(require('../pages/list/list')), 'listPage')
-
+import homePage from '@/pages/home/home'
+import listPage from '@/pages/list/list'
 Vue.use(Router)
 
 export default new Router({

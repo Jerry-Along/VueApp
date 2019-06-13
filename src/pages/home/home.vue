@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import homeHeader from './components/header.vue'
 export default {
 	name:"homePage",
 	data(){
