@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img src="./assets/v-log.jpg">
     <router-view/>
   </div>
 </template>

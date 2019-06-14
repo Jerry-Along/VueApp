@@ -1,5 +1,9 @@
 <template>
-	<h2>{{msg}}</h2>
+	<div>
+		<img src="./../../assets/logo2.jpg" />
+		<h2>{{msg}}</h2>
+	</div>
+	
 </template>
 
 <script>
@@ -7,7 +11,7 @@ export default {
 	name: 'listPage',
 	data() {
 		return {
-			msg: 'jump to list page'
+			msg: 'jump to two page'
 		}
 
 	}
