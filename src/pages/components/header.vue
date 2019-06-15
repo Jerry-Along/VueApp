@@ -6,7 +6,7 @@
 		<div class="header-search">
 			<span class="iconfont">&#xe614;</span>
 			搜索景点/门票</div>
-		<div class="header-right">
+		<div class="header-right"> 
 			城市
 			<span class="iconfont">&#xe6aa;</span>
 		</div>
@@ -31,18 +31,19 @@ export default{
 			width:4rem
 			float:left
 		.header-search
-			height:2.0rem
+			height:1.8rem
 			margin-top:0.2rem
 			margin-bottom:0.2rem
 			line-height:1.8rem
 			flex:1
 			background: #fff
 			border-radius:.3rem
-			
 			color:#ccc
+			font-size:0.8rem
 			
 		.header-right
 			width:4rem
 			float:right
+			font-size:0.8rem
 			
 </style>

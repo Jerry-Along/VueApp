@@ -3,6 +3,11 @@
 import Vue from 'vue'
 import fastclick from 'fastclick'
 
+import vueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+Vue.use(vueAwesomeSwiper)
+
+
 import App from './App'
 import router from './router'
 

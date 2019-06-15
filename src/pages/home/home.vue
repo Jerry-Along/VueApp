@@ -1,23 +1,18 @@
 <template>
 	<div>
-		<img src="./../../assets/logo1.jpg" />
-		<h2>{{msg}}</h2> <br />
 		<home-header></home-header>
-		<!-- <router-link to="./list" class = "home">跳转到第二页</router-link> -->
+		<home-swiper></home-swiper>
 	</div>
 </template>
 
 <script>
 import homeHeader from './../components/header'
+import homeSwiper from './../components/swiper'
+
 export default {
 	name:"homePage",
 	components:{
-		homeHeader
-	},
-	data(){
-		return{
-			msg:'Welcome to my vueApp'
-		}
+		homeHeader,homeSwiper
 	}
 }
 </script>
