@@ -1,13 +1,16 @@
 <template>
 	<div class="icons">
-		<div class="icon" v-for="item of iconList" :key="item.id">
-			<div class="icon-img">
-				<img  class="icon-img-content" :src="item.iconUrl" />
-			</div>
-			<p class="icon-text">{{item.name}}</p>
-		</div>
+		<swiper>
+			<swiper-slide v-for="(page, index) in pages" :key="index">
+				<div class="icon" v-for="item of page" :key="item.id">
+					<div class="icon-img">
+						<img  class="icon-img-content" :src="item.iconUrl" />
+					</div>
+					<p class="icon-text">{{item.name}}</p>
+				</div>
+			</swiper-slide>
+		</swiper>
 	</div>
-	
 </template>
 
 <script>
@@ -17,7 +20,7 @@ export default{
 		return {
 			iconList:[{
 				id:"0001",
-				name:"门票1",
+				name:"门票1门票2门票3门票4门票5",
 				iconUrl:"http://cs.vmovier.com/Uploads/Series/2017-06-22/594b9facf35be.jpg"
 			},{
 				id:"0002",
@@ -53,6 +56,19 @@ export default{
 				iconUrl:"http://cs.vmovier.com/Uploads/Series/2017-06-22/594b9f41dd4bd.jpg"
 			}]
 		}
+	},
+	computed:{
+		pages(){
+			const pages = []
+			this.iconList.forEach((item,index) => {
+				const page = Math.floor(index/8)
+				if(!pages[page]){
+					pages[page] = []
+				}
+				pages[page].push(item)
+			})
+			return pages
+		}
 	}
 }
 </script>
@@ -81,6 +97,9 @@ export default{
 				right:0
 				position:absolute
 				font-size:17px
+				overflow:hidden
+				text-overflow:ellipsis
+				white-space:nowrap
 				
 				
 </style>
