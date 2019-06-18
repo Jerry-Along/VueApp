@@ -13,7 +13,7 @@ import router from './router'
 
 import 'wenze/reset.css'
 import 'wenze/iconfont.css'
-// import './assets/styles/border.css'
+import './assets/styles/border.css'
 
 Vue.config.productionTip = false
 
