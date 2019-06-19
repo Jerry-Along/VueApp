@@ -21,7 +21,7 @@ export default{
 			iconList:[
 				{
 					id:"0001",
-					name:"门票1门票2门票3门票4门票5",
+					name:"门票1",
 					iconUrl:"http://cs.vmovier.com/Uploads/Series/2017-06-22/594b9facf35be.jpg"
 				},{
 					id:"0002",

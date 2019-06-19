@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="recommend-title">猜你喜欢</div>
+		<div class="recommend-title">周末去哪儿</div>
 		<ul>
 			<li class="item border-bottom" v-for="item in recommendList" :key="item.bannerid">
 				<div class="item-img-box">
@@ -8,11 +8,6 @@
 				</div>
 				<div class="item-info">
 					<p class="item-title">北京欢乐谷</p>
-					<p class="item-comment-num">★★★★★ {{item.bannerid}}条评论</p>
-					<div class="item-money-position">
-						<p class="item-money">123元</p>
-						<p class="item-position">朝阳区</p>
-					</div>
 					<p class="item-desc">亚洲唯一飞行式过山车等你来挑战</p>
 				</div>
 			</li>
@@ -22,7 +17,7 @@
 
 <script>
 export default{
-	name:'homeRecommend',
+	name:'homeWeekend',
 	data(){
 		return {
 			recommendList: [{
@@ -56,46 +51,27 @@ export default{
 		font-size:.9rem
 		text-indent:.5rem
 		
-	.item
+
+	.item-img-box
 		overflow:hidden
-		height:6rem
-		font-size:.9rem
-		display:flex 
-		.item-img-box
-			float:left
-			width:6rem
-			height:6rem
-			padding:.2rem
-			.item-img
-				width:100%
-				height:5.6rem
-		.item-info
-			flex:1
+		width:100%
+		height:0
+		padding-bottom:55%
+		.item-img
+			width:100%
+			
+	.item-info
+		text-align:left
+		padding:.3rem
+		.item-title
+			font-size:.9rem
+			line-height:1.5rem
+		.item-desc
 			text-align:left
-			padding:.3rem
-			.item-title
-				line-height:1.5rem
-			.item-comment-num
-				line-height:1rem
-				color:#616161
-				font-size:.7rem
-			.item-money-position
-				height:1.5rem
-				.item-money
-					line-height:1.5rem
-					float:left
-					color:#ff8300
-				.item-position
-					float:right
-					font-size:.7rem
-			.item-desc
-				line-height:1rem
-				color:#ff5555
-				font-size:.6rem
-				background:pink
-				text-align:center
-				margin-right:3rem
-				border-radius:0.5rem
-				
+			line-height:1rem
+			color:#616161
+			font-size:.6rem
+			
+			
 			
 </style>
