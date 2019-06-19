@@ -3,6 +3,7 @@
 		<home-header></home-header>
 		<home-swiper></home-swiper>
 		<home-icons></home-icons>
+		<home-hot-week></home-hot-week>
 		<home-recommend></home-recommend>
 		<home-weekend></home-weekend>
 	</div>
@@ -12,13 +13,14 @@
 import homeHeader from './../components/header'
 import homeSwiper from './../components/swiper'
 import homeIcons from './../components/icons'
+import homeHotWeek from './../components/hotWeek'
 import homeRecommend from './../components/recommend'
 import homeWeekend from './../components/weekend'
 
 export default {
 	name:"homePage",
 	components:{
-		homeHeader,homeSwiper,homeIcons,homeRecommend,homeWeekend
+		homeHeader,homeSwiper,homeIcons,homeHotWeek,homeRecommend,homeWeekend
 	}
 }
 </script>
