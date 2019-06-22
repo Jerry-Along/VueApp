@@ -15,6 +15,10 @@ import 'wenze/reset.css'
 import 'wenze/iconfont.css'
 import './assets/styles/border.css'
 
+import axios from 'axios'
+Vue.prototype.$axios = axios
+
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

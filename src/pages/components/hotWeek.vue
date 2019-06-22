@@ -40,11 +40,11 @@ export default{
 				"image": "https:\/\/cs.vmovier.com\/Uploads\/Banner\/2019\/06\/19\/5d09dd779bfaf.jpg"
 			},{
 				"showtype": "1",
-				"bannerid": "3213",
+				"bannerid": "3241",
 				"image": "https:\/\/cs.vmovier.com\/Uploads\/Banner\/2019\/06\/12\/5d007d73894e2.jpg"
 			}, {
 				"showtype": "1",
-				"bannerid": "3247",
+				"bannerid": "3248",
 				"image": "https:\/\/cs.vmovier.com\/Uploads\/Banner\/2019\/06\/19\/5d09dd779bfaf.jpg"
 			}]
 		}

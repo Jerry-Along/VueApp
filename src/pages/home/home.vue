@@ -21,6 +21,13 @@ export default {
 	name:"homePage",
 	components:{
 		homeHeader,homeSwiper,homeIcons,homeHotWeek,homeRecommend,homeWeekend
+	},
+	mounted(){
+		this.$axios.get("/api/data.json").then((res) => {
+			console.log(res.data);
+		}).catch( (res) =>{
+			
+		})
 	}
 }
 </script>
