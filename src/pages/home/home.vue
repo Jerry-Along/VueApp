@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import homeHeader from './../components/header'
-import homeSwiper from './../components/swiper'
-import homeIcons from './../components/icons'
-import homeHotWeek from './../components/hotWeek'
-import homeRecommend from './../components/recommend'
-import homeWeekend from './../components/weekend'
+import homeHeader from './components/header'
+import homeSwiper from './components/swiper'
+import homeIcons from './components/icons'
+import homeHotWeek from './components/hotWeek'
+import homeRecommend from './components/recommend'
+import homeWeekend from './components/weekend'
 
 export default {
 	name:"homePage",
@@ -23,7 +23,7 @@ export default {
 		homeHeader,homeSwiper,homeIcons,homeHotWeek,homeRecommend,homeWeekend
 	},
 	mounted(){
-		this.$axios.get("/api/data.json").then((res) => {
+		this.axios.get("/api/data.json").then((res) => {
 			console.log(res.data);
 		}).catch( (res) =>{
 			

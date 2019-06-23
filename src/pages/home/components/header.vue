@@ -6,10 +6,11 @@
 		<div class="header-search">
 			<span class="iconfont">&#xe614;</span>
 			搜索景点/门票</div>
-		<div class="header-right"> 
+		<router-link to="/city" class="header-right">
 			城市
 			<span class="iconfont">&#xe6aa;</span>
-		</div>
+		</router-link>
+		
 	 </div>
 </template>
 
@@ -45,5 +46,7 @@ export default{
 			width:4rem
 			float:right
 			font-size:0.8rem
+			color:#fff
+
 			
 </style>

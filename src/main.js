@@ -16,7 +16,9 @@ import 'wenze/iconfont.css'
 import './assets/styles/border.css'
 
 import axios from 'axios'
-Vue.prototype.$axios = axios
+import VueAxios from 'vue-axios'
+
+Vue.use(VueAxios,axios)
 
 
 Vue.config.productionTip = false

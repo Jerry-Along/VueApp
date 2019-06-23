@@ -2,7 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import splashPage from '@/pages/splashPage'
 import homePage from '@/pages/home/home'
-import listPage from '@/pages/list/list'
+import cityPage from '@/pages/city/city'
+
 
 Vue.use(Router)
 
@@ -17,11 +18,10 @@ export default new Router({
 		  path: '/home',
 		  name: 'homePage',
 		  component: homePage
-		},
-		{
-		  path: '/list',
-		  name: 'listPage',
-		  component: listPage
+		}, {
+		  path: '/city',
+		  name: 'cityPage',
+		  component: cityPage
 		}
   ]
 })
