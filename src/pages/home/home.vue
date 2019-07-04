@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<home-header></home-header>
-		<home-swiper></home-swiper>
+		<home-swiper :cityBanner="cityBanner"></home-swiper>
 		<home-icons></home-icons>
 		<home-hot-week></home-hot-week>
 		<home-recommend></home-recommend>
@@ -22,9 +22,16 @@ export default {
 	components:{
 		homeHeader,homeSwiper,homeIcons,homeHotWeek,homeRecommend,homeWeekend
 	},
+	data(){
+		return {
+			cityBanner:[]
+		}
+	},
 	mounted(){
-		this.axios.get("/api/data.json").then((res) => {
-			console.log(res.data);
+		this.axios.get("/api/home.json").then((res) => {
+			const resdata=res.data;
+			this.cityBanner = resdata.data.banner.list;
+			
 		}).catch( (res) =>{
 			
 		})

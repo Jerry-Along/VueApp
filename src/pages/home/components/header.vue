@@ -22,7 +22,7 @@ export default{
 
 <style lang="stylus" scoped>
 	// @import './../../assets/styles/values.styl'
-	@import '~wenze/values.styl'
+	@import '~styles/values.styl'
 	.header
 		display:flex
 		line-height:2.2rem

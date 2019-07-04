@@ -11,8 +11,8 @@ Vue.use(vueAwesomeSwiper)
 import App from './App'
 import router from './router'
 
-import 'wenze/reset.css'
-import 'wenze/iconfont.css'
+import 'styles/reset.css'
+import 'styles/iconfont.css'
 import './assets/styles/border.css'
 
 import axios from 'axios'

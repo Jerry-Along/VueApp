@@ -1,5 +1,5 @@
 <template>
-	<div class="header border-bottom">
+	<div class="header">
 		城市选择
 		<router-link to="/home">
 			<div class="cityBack">
@@ -11,13 +11,13 @@
 
 <script>
 export default{
-	name:"cicyHeader"
+	name:"cityHeader"
 }
 </script>
 
 <style lang="stylus" scoped>
 	
-	@import '~wenze/values.styl'
+	@import '~styles/values.styl'
 	.header
 		position:relative
 		height:2.2rem
