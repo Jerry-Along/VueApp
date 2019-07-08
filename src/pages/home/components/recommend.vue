@@ -2,20 +2,25 @@
 	<div>
 		<div class="recommend-title">猜你喜欢</div>
 		<ul>
-			<li class="item border-bottom" v-for="item in recommendList" :key="item.bannerid">
-				<div class="item-img-box">
-					<img class="item-img" :src="item.image"/>
-				</div>
-				<div class="item-info">
-					<p class="item-title">北京欢乐谷</p>
-					<p class="item-comment-num">★★★★★ {{item.bannerid}}条评论</p>
-					<div class="item-money-position">
-						<p class="item-money">123元</p>
-						<p class="item-position">朝阳区</p>
+			<router-link
+				to="/detail"
+				tag="li"
+				class="item border-bottom" 
+				v-for="item in recommendList" 
+				:key="item.bannerid">
+					<div class="item-img-box">
+						<img class="item-img" :src="item.image"/>
 					</div>
-					<p class="item-desc">亚洲唯一飞行式过山车等你来挑战</p>
-				</div>
-			</li>
+					<div class="item-info">
+						<p class="item-title">北京欢乐谷</p>
+						<p class="item-comment-num">★★★★★ {{item.bannerid}}条评论</p>
+						<div class="item-money-position">
+							<p class="item-money">123元</p>
+							<p class="item-position">朝阳区</p>
+						</div>
+						<p class="item-desc">亚洲唯一飞行式过山车等你来挑战</p>
+					</div>
+			</router-link>
 		</ul>
 	</div>
 </template>
